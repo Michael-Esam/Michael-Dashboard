@@ -96,6 +96,7 @@ a {
 .side>h2 {
     margin-bottom: 50px;
     position: relative;
+    font-size: 20px;
 }
 
 .side h2::before,
@@ -1349,7 +1350,13 @@ table td img:not(:first-child) {
 }
 
 .files-page .files-stat {
-    min-width: 270px;
+    min-width: 280px;
+}
+
+@media(max-width:768px) {
+    .files-page .files-stat {
+        min-width: 260px;
+    }
 }
 
 .files-page .files-stat .box {
